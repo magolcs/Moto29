@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="novas_entregas">
+        <item>Entrega 1</item>
+        <item>Entrega 2</item>
+        <item>Entrega 3</item>
+        <item>Entrega 4</item>
+    </string-array>
+    <string-array name="historico">
+        <item>Historico da entrega 1</item>
+        <item>Historico da entrega 2</item>
+        <item>Historico da entrega 3</item>
+        <item>Historico da entrega 4</item>
+    </string-array>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Prioridade: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvPrioridade"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:text="Nº Nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNumeroNota"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/tvPrioridade"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Emissão: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEmissaoNota"
+        android:layout_below="@+id/tvNumeroNota"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:text="Destinatario:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmissaoNota"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvNomeDestinatario"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:text="Urgente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNomePrioridade"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvNomeDestinatario"
+        android:layout_toEndOf="@+id/tvNomeDestinatario"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:text="123456789"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNomePrioridade"
+        android:layout_alignLeft="@+id/tvNomePrioridade"
+        android:layout_alignStart="@+id/tvNomePrioridade"
+        android:id="@+id/tvNomeNota"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:text="15:35, 7/11/2016"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNomeNota"
+        android:layout_alignLeft="@+id/tvNomeNota"
+        android:layout_alignStart="@+id/tvNomeNota"
+        android:id="@+id/tvNomeHorarioNota"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:text="Givaldo Recon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNomeHorarioNota"
+        android:layout_alignLeft="@+id/tvNomeHorarioNota"
+        android:layout_alignStart="@+id/tvNomeHorarioNota"
+        android:id="@+id/tvNomeEndereco"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:text="Aceitar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btAceitar"
+        android:elevation="6dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="60dp" />
+
+    <TextView
+        android:text="End. Coleta:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEnderecoColeta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/tvRemetente"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:text="Av. Fagundes Varela, 111, Jardim Atlântico, Olinda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNomeColeta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignBaseline="@+id/tvEnderecoColeta"
+        android:layout_alignBottom="@+id/tvNomeEnderecoDestino"
+        android:layout_toRightOf="@+id/tvEnderecoDestinatario"
+        android:layout_toEndOf="@+id/tvEnderecoDestinatario" />
+
+    <TextView
+        android:text="End. Entrega: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEnderecoDestinatario"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignBaseline="@+id/tvNomeEnderecoDestino"
+        android:layout_alignBottom="@+id/tvNomeEnderecoDestino"
+        android:layout_toLeftOf="@+id/tvNomeEndereco"
+        android:layout_toStartOf="@+id/tvNomeEndereco" />
+
+    <TextView
+        android:text="Av. Brasil, 127, Rio Doce, Olinda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNomeEnderecoDestino"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/tvNomeEndereco"
+        android:layout_toRightOf="@+id/tvEnderecoDestinatario"
+        android:layout_toEndOf="@+id/tvEnderecoDestinatario" />
+
+    <TextView
+        android:text="Remetente: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRemetente"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/tvNomeEnderecoDestino"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Loja de Peças Amaral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNomeRemetente"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_above="@+id/tvEnderecoColeta"
+        android:layout_alignLeft="@+id/tvNomeColeta"
+        android:layout_alignStart="@+id/tvNomeColeta" />
+
+</RelativeLayout>
